@@ -6,6 +6,18 @@ using UnityEngine.InputSystem;
 public class Joueur : MonoBehaviour {
 
     public InputMaster controls;
+    public float JumpForce, MoveSpeed;
+    public bool Jumping;
+    public Rigidbody2D RG2D;
+
+    void Start() {
+        RG2D = GetComponent<Rigidbody2D>();
+
+        MoveSpeed = 6f;
+        JumpForce = 8f;
+
+        Jumping = true;
+    }
 
     private void Awake() {
         controls = new InputMaster();
@@ -19,6 +31,7 @@ public class Joueur : MonoBehaviour {
 
     void Saut() {
         Debug.Log("Saut effectué");
+        RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
     }
 
     private void OnEnable() {
