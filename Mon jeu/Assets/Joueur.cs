@@ -14,7 +14,7 @@ public class Joueur : MonoBehaviour {
         RG2D = GetComponent<Rigidbody2D>();
 
         MoveSpeed = 6f;
-        JumpForce = 8f;
+        JumpForce = 6f;
 
         Jumping = true;
     }
@@ -26,13 +26,11 @@ public class Joueur : MonoBehaviour {
     }
 
     void Mouvement(Vector2 direction) {
-        Debug.Log("Déplacement effectué" + direction);
         RG2D.velocity = new Vector2(MoveSpeed * direction.x, RG2D.velocity.y);
     }
 
     void Saut() {
-        Debug.Log("Saut effectué");
-        if(!Jumping || ) {
+        if(!Jumping) {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
             Jumping = true;
         }
@@ -49,7 +47,7 @@ public class Joueur : MonoBehaviour {
     void Update()
     {
 
-        //     // Crounching
+        // Crounching
         // if(MovY == -1){
         //     transform.localScale = new Vector2(1f, 0.5f);
         // }
@@ -60,8 +58,12 @@ public class Joueur : MonoBehaviour {
     
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        Jumping = false;
+    void OnCollisionEnter2D(Collision2D col) {
+        if(col.gameObject.tag == "Floor") {
+            Jumping = false;
+        }
+        else {
+            Jumping = true;
+        }
     }
 }
