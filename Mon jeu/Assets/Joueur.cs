@@ -13,8 +13,8 @@ public class Joueur : MonoBehaviour {
     void Start() {
         RG2D = GetComponent<Rigidbody2D>();
 
-        MoveSpeed = 6f;
-        JumpForce = 6f;
+        MoveSpeed = 8f;
+        JumpForce = 11f;
 
         Jumping = true;
     }
