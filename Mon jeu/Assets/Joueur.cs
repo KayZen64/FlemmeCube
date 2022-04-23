@@ -32,7 +32,7 @@ public class Joueur : MonoBehaviour {
 
     void Saut() {
         Debug.Log("Saut effectué");
-        if(!Jumping) {
+        if(!Jumping || ) {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
             Jumping = true;
         }
