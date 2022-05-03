@@ -28,7 +28,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
             ""id"": ""35aa0b3f-0a58-45bc-be4c-9f8a9eb3612d"",
             ""actions"": [
                 {
-                    ""name"": ""Saut"",
+                    ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""f79334b2-2262-49ac-adb8-2e1babea89c5"",
                     ""expectedControlType"": ""Button"",
@@ -37,7 +37,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Deplacement"",
+                    ""name"": ""Move"",
                     ""type"": ""Value"",
                     ""id"": ""e3e9447f-3f74-44b9-b428-14abf7ce2c82"",
                     ""expectedControlType"": ""Vector2"",
@@ -54,7 +54,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -65,7 +65,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -76,7 +76,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -87,7 +87,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -98,7 +98,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -109,7 +109,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -120,7 +120,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -131,7 +131,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -142,7 +142,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -153,7 +153,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -164,7 +164,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -175,7 +175,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -186,7 +186,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -197,7 +197,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -208,7 +208,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -219,7 +219,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -230,7 +230,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -241,7 +241,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -252,7 +252,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -263,7 +263,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Deplacement"",
+                    ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -274,7 +274,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Manette"",
-                    ""action"": ""Saut"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -285,7 +285,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Saut"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -296,7 +296,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Clavier souris"",
-                    ""action"": ""Saut"",
+                    ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -335,8 +335,8 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
 }");
         // Joueur
         m_Joueur = asset.FindActionMap("Joueur", throwIfNotFound: true);
-        m_Joueur_Saut = m_Joueur.FindAction("Saut", throwIfNotFound: true);
-        m_Joueur_Deplacement = m_Joueur.FindAction("Deplacement", throwIfNotFound: true);
+        m_Joueur_Jump = m_Joueur.FindAction("Jump", throwIfNotFound: true);
+        m_Joueur_Move = m_Joueur.FindAction("Move", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -396,14 +396,14 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
     // Joueur
     private readonly InputActionMap m_Joueur;
     private IJoueurActions m_JoueurActionsCallbackInterface;
-    private readonly InputAction m_Joueur_Saut;
-    private readonly InputAction m_Joueur_Deplacement;
+    private readonly InputAction m_Joueur_Jump;
+    private readonly InputAction m_Joueur_Move;
     public struct JoueurActions
     {
         private @InputMaster m_Wrapper;
         public JoueurActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Saut => m_Wrapper.m_Joueur_Saut;
-        public InputAction @Deplacement => m_Wrapper.m_Joueur_Deplacement;
+        public InputAction @Jump => m_Wrapper.m_Joueur_Jump;
+        public InputAction @Move => m_Wrapper.m_Joueur_Move;
         public InputActionMap Get() { return m_Wrapper.m_Joueur; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -413,22 +413,22 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_JoueurActionsCallbackInterface != null)
             {
-                @Saut.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnSaut;
-                @Saut.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnSaut;
-                @Saut.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnSaut;
-                @Deplacement.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnDeplacement;
-                @Deplacement.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnDeplacement;
-                @Deplacement.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnDeplacement;
+                @Jump.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnJump;
+                @Move.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
             }
             m_Wrapper.m_JoueurActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Saut.started += instance.OnSaut;
-                @Saut.performed += instance.OnSaut;
-                @Saut.canceled += instance.OnSaut;
-                @Deplacement.started += instance.OnDeplacement;
-                @Deplacement.performed += instance.OnDeplacement;
-                @Deplacement.canceled += instance.OnDeplacement;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
             }
         }
     }
@@ -453,7 +453,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
     }
     public interface IJoueurActions
     {
-        void OnSaut(InputAction.CallbackContext context);
-        void OnDeplacement(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
     }
 }
