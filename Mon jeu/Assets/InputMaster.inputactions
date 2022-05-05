@@ -6,7 +6,7 @@
             "id": "35aa0b3f-0a58-45bc-be4c-9f8a9eb3612d",
             "actions": [
                 {
-                    "name": "Saut",
+                    "name": "Jump",
                     "type": "Button",
                     "id": "f79334b2-2262-49ac-adb8-2e1babea89c5",
                     "expectedControlType": "Button",
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Deplacement",
+                    "name": "Move",
                     "type": "Value",
                     "id": "e3e9447f-3f74-44b9-b428-14abf7ce2c82",
                     "expectedControlType": "Vector2",
@@ -32,7 +32,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -43,7 +43,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -54,7 +54,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -65,7 +65,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -76,7 +76,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -87,7 +87,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -98,7 +98,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -109,7 +109,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -120,7 +120,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -131,7 +131,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -142,7 +142,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -153,7 +153,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -164,7 +164,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -175,7 +175,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -186,7 +186,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -197,7 +197,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -208,7 +208,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -219,7 +219,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -230,7 +230,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -241,7 +241,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Deplacement",
+                    "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -252,7 +252,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Manette",
-                    "action": "Saut",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -263,7 +263,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Saut",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -274,7 +274,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Clavier souris",
-                    "action": "Saut",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
