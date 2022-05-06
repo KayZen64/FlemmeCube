@@ -7,7 +7,9 @@ public class Joueur : MonoBehaviour {
 
     public InputMaster controls;
     public float JumpForce, MoveSpeed;
-    public bool Jumping;
+    public Transform groundCheck;
+    public LayerMask groundlayer;
+    bool isGrounded;
     public Rigidbody2D RG2D;
     public Vector2 moveVal;
     float AxisX;
@@ -17,8 +19,6 @@ public class Joueur : MonoBehaviour {
 
         MoveSpeed = 10f;
         JumpForce = 11f;
-
-        Jumping = true;
     }
 
     private void Awake() {
@@ -35,9 +35,8 @@ public class Joueur : MonoBehaviour {
     }
 
     void Jump() {
-        if(!Jumping) {
+        if(isGrounded) {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
-            Jumping = true;
         }
     }
 
@@ -64,14 +63,7 @@ public class Joueur : MonoBehaviour {
         //     transform.localScale = new Vector2(1f, 1f);
         // }
     
+    isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
     }
-
-    void OnCollisionEnter2D(Collision2D col) {
-        if(col.gameObject.tag == "Floor") {
-            Jumping = false;
-        }
-        else {
-            Jumping = true;
-        }
-    }
+    
 }
