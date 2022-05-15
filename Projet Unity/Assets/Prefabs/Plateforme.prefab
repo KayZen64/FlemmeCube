@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1668913928266644937}
   - component: {fileID: 1668913928266644936}
   m_Layer: 3
-  m_Name: Plateforme 01
+  m_Name: Plateforme
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
