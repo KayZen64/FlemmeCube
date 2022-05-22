@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ChangementDeNiveau : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col) {
-            Debug.Log("test");
             Invoke("NextLevel", 0.3f);
         }
 
