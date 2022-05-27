@@ -48,9 +48,6 @@ public class Joueur : MonoBehaviour {
         controls.Disable();
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-        
-    }
     private void Update()
     {
         // transform.position += new Vector3(moveVal.x, 0 , 0) * Time.deltaTime * MoveSpeed;
