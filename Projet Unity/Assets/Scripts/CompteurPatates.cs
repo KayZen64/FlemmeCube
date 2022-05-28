@@ -7,21 +7,15 @@ using TMPro;
 public class CompteurPatates : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    public static int scoreValue = 0;
-
+    public int scoreValue = 0;
+    bool patateAjoutee = false; 
+    
     void OnTriggerEnter2D(Collider2D coll) {
-        CompteurPatates.scoreValue += 1;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        scoreText = GetComponent<TextMeshProUGUI>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        scoreText.text = "" + scoreValue;
+        if(!patateAjoutee)
+        {
+            CompteurPatates.scoreValue += 1;
+            scoreText.text = "" + scoreValue;
+            patateAjoutee = true;
+        }
     }
 }

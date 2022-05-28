@@ -1116,7 +1116,6 @@ GameObject:
   - component: {fileID: 643800691}
   - component: {fileID: 643800694}
   - component: {fileID: 643800693}
-  - component: {fileID: 643800692}
   m_Layer: 5
   m_Name: Compteur
   m_TagString: Untagged
@@ -1144,19 +1143,6 @@ RectTransform:
   m_AnchoredPosition: {x: 360, y: -139}
   m_SizeDelta: {x: 183.11652, y: 45.779114}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &643800692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643800690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106a84cc506704f56b70c44ecbe8eb9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!114 &643800693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2513,6 +2499,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2208528351705856433, guid: 05d51551311d149e58b01e5b58c9f8ec, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2208528352232127102, guid: 05d51551311d149e58b01e5b58c9f8ec, type: 3}
       propertyPath: m_text
       value: 
