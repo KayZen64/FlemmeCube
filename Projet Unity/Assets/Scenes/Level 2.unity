@@ -241,6 +241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
+--- !u!4 &55054683 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4639979044051959523, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
+  m_PrefabInstance: {fileID: 55054682}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &312678373
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1110,7 +1115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 55054683}
   respawnPoint: {fileID: 1949725650}
 --- !u!61 &806697028
 BoxCollider2D:
@@ -1348,7 +1353,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120414224
 GameObject:
@@ -1432,7 +1437,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
 --- !u!1001 &1146774413
 PrefabInstance:
@@ -2074,7 +2079,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1949725651
 MonoBehaviour:
