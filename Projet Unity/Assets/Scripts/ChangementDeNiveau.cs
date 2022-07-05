@@ -10,7 +10,7 @@ public class ChangementDeNiveau : MonoBehaviour
             Invoke("NextLevel", 0.3f);
         }
 
-    void NextLevel() {
+    public void NextLevel() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
