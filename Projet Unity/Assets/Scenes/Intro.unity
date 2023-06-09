@@ -385,7 +385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -2105}
+  m_AnchoredPosition: {x: 0, y: -2500}
   m_SizeDelta: {x: 859.62, y: 777.2701}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &134819628
@@ -408,17 +408,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "En l\u2019an 624, les habitants de la PLAN\u0116TE CHOCOLATINE entrent
-    en guerre. La TRIBU TRIANGLE, la TRIBU CUBE et la TRIBU CERCLE se disputent les
-    territoires, les richesses et le pouvoir.\n\nLe monde est \xE0 feu et \xE0 sang.
-    \r\n\r\n\n\n\nMais tout espoir n\u2019est pas perdu.\nUne l\xE9gende se raconte
-    depuis l\u2019aube des temps : \r\n\r\n\xAB Lorsqu\u2019elles cr\xE9\xE8rent
-    la GALAXIE P\xC2TISSERIES, les divinit\xE9s ont diss\xE9min\xE9 six art\xE9facts
-    sacr\xE9s sur chaque plan\xE8te, baptis\xE9s PATATES. Si un individu parvient
-    \xE0 les r\xE9unir, il obtiendra le titre de ROI PATATE et pourra r\xE9gner sur
-    sa plan\xE8te. \xBB\n\n\n\n\nR\xE9sistant \xE0 l'appel de la guerre, un jeune
-    cube d\xE9cide de tracer sa propre voie. Apr\xE8s avoir entendu la l\xE9gende,
-    il se met en route pour collecter toutes les patates.\n\n\nSon nom :\n\n\n\n\n\n\n\n\n\n\nFLEMMECUBE"
+  m_text: "En l\u2019an 624, la PLAN\xC8TE CHOCOLATINE subit les attaques d\u2019une
+    force \xE9trang\xE8re inconnue. Le ROYAUME CARR\xC9, la LIGUE DES RONDS et la
+    TRIBU TRIANGLE agonisent. Le monde est \xE0 feu et \xE0 sang.\n\n\n\n\n\n\nMais
+    tout espoir n\u2019est pas perdu. Depuis l\u2019aube des temps, une l\xE9gende
+    se raconte : \n\n\n\n\xAB\_Lorsqu\u2019elles fond\xE8rent la GALAXIE P\xC2TISSERIES,
+    les divinit\xE9s ont diss\xE9min\xE9, sur chaque plan\xE8te, trois art\xE9facts
+    sacr\xE9s baptis\xE9s PATATES. Quiconque parviendra \xE0 les r\xE9unir \xE0 l\u2019AUTEL
+    DIVIN obtiendra le prestigieux titre de roi patate et pourra r\xE9gner sur sa
+    plan\xE8te\_\xBB\v\n\n\n\n\n\n\n\nD\xE9termin\xE9 \xE0 prot\xE9ger son peuple,
+    un jeune habitant du ROYAUME CARR\xC9 d\xE9cide de partir en qu\xEAte des patates
+    sacr\xE9es.\n\n\n\n\n\nSon nom : \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFLEMMECUBE."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -935,7 +935,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000021935, y: 856.09}
+  m_AnchoredPosition: {x: 0.000021935, y: -57.599976}
   m_SizeDelta: {x: 801.9138, y: 1151.1796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1311984304
