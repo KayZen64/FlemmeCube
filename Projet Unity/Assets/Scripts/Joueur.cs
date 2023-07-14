@@ -21,6 +21,7 @@ public class Joueur : MonoBehaviour {
     public Texture2D invTexture;
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
+    private Sprite oldSprite;
 
     private void Start() {
         RG2D = GetComponent<Rigidbody2D>();
@@ -53,27 +54,19 @@ public class Joueur : MonoBehaviour {
         if(!isInvEnabled) {
             Debug.Log("startinvisibility");
             isInvEnabled = true;
-            spriteRenderer.sprite = newSprite; 
+            oldSprite = spriteRenderer.sprite;
+            spriteRenderer.sprite = newSprite;
             StartCoroutine(InvCoroutine());
         }
         else {
             Debug.Log("Invisibilité déjà activée");
         }
-        
-        // if(!isInvEnabled) {
-        //     IEnumerator EnableInvisibility()
-        //     {
-        //         print("test");
-        //         isInvEnabled = true;
-        //         yield return new WaitForSeconds(5);
-        //         print("test2");
-        //     }
-        //}
     }
 
     IEnumerator InvCoroutine() {
         Debug.Log("Coroutine démarrée " + Time.time);
         yield return new WaitForSeconds(invTime);
+        spriteRenderer.sprite = oldSprite; 
         Debug.Log("Coroutine finie " + Time.time);
 
         yield return new WaitForSeconds(invCooldown);
