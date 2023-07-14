@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,14 +14,7 @@ public class Joueur : MonoBehaviour {
     public Vector2 moveVal;
     float AxisX;
 
-    // Invisibility ability
-    public float invTime = 5.0f;
-    public float invCooldown = 5.0f;
-    bool isInvEnabled;
-    public Texture2D invTexture;
-    public SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
-    private Sprite oldSprite;
+    public Invisibility invisibilityComponent;
 
     private void Start() {
         RG2D = GetComponent<Rigidbody2D>();
@@ -32,8 +25,8 @@ public class Joueur : MonoBehaviour {
 
     private void Awake() {
         controls = new InputMaster();
-        controls.Joueur.Jump.performed += context => Jump();
         controls.Joueur.Invisibility.performed += context => Invisibility();
+        controls.Joueur.Jump.performed += context => Jump();
     }
 
     void OnMove(InputValue value) {
@@ -51,28 +44,8 @@ public class Joueur : MonoBehaviour {
     }
 
     void Invisibility() {
-        if(!isInvEnabled) {
-            Debug.Log("startinvisibility");
-            isInvEnabled = true;
-            oldSprite = spriteRenderer.sprite;
-            spriteRenderer.sprite = newSprite;
-            StartCoroutine(InvCoroutine());
-        }
-        else {
-            Debug.Log("Invisibilité déjà activée");
-        }
+        invisibilityComponent.StartInvisibility();
     }
-
-    IEnumerator InvCoroutine() {
-        Debug.Log("Coroutine démarrée " + Time.time);
-        yield return new WaitForSeconds(invTime);
-        spriteRenderer.sprite = oldSprite; 
-        Debug.Log("Coroutine finie " + Time.time);
-
-        yield return new WaitForSeconds(invCooldown);
-        isInvEnabled = false;
-    }
-
 
     private void OnEnable() {
         controls.Enable();
