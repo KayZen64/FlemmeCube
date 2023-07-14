@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,6 +14,9 @@ public class Joueur : MonoBehaviour {
     public Vector2 moveVal;
     float AxisX;
 
+    float invTime, invCooldown;
+    bool isInvEnabled;
+
     private void Start() {
         RG2D = GetComponent<Rigidbody2D>();
 
@@ -24,6 +27,7 @@ public class Joueur : MonoBehaviour {
     private void Awake() {
         controls = new InputMaster();
         controls.Joueur.Jump.performed += context => Jump();
+        controls.Joueur.Invisibility.performed += context => Invisibility();
     }
 
     void OnMove(InputValue value) {
@@ -38,6 +42,19 @@ public class Joueur : MonoBehaviour {
         if(isGrounded) {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
         }
+    }
+
+    void Invisibility() {
+        if(!isInvEnabled) {
+            IEnumerator EnableInvisibility()
+            {
+                print("test");
+                isInvEnabled = true;
+                yield return new WaitForSeconds(5.0f);
+                print("test2");
+            }
+        }
+
     }
 
     private void OnEnable() {
