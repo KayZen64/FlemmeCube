@@ -15,11 +15,14 @@ public class Invisibility : MonoBehaviour
     public Sprite newSprite;
     private Sprite oldSprite;
 
+    public AptitudesUI aptitudesUIComponent;
+
 
     public void StartInvisibility() {
         if(!isInvEnabled && !isCooldown) {
             Debug.Log("startinvisibility");
             isInvEnabled = true;
+            aptitudesUIComponent.SquareAptUIOff();   
             oldSprite = spriteRenderer.sprite;
             spriteRenderer.sprite = newSprite;
             StartCoroutine(InvCoroutine());
@@ -39,5 +42,6 @@ public class Invisibility : MonoBehaviour
 
         yield return new WaitForSeconds(invCooldown);
         isCooldown = false;
+        aptitudesUIComponent.SquareAptUIOn();
     }
 }
