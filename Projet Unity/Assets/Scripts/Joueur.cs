@@ -14,6 +14,8 @@ public class Joueur : MonoBehaviour {
     public Vector2 moveVal;
     float AxisX;
 
+    public Invisibility invisibilityComponent;
+
     private void Start() {
         RG2D = GetComponent<Rigidbody2D>();
 
@@ -23,6 +25,7 @@ public class Joueur : MonoBehaviour {
 
     private void Awake() {
         controls = new InputMaster();
+        controls.Joueur.Invisibility.performed += context => Invisibility();
         controls.Joueur.Jump.performed += context => Jump();
     }
 
@@ -38,6 +41,10 @@ public class Joueur : MonoBehaviour {
         if(isGrounded) {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
         }
+    }
+
+    void Invisibility() {
+        invisibilityComponent.StartInvisibility();
     }
 
     private void OnEnable() {
