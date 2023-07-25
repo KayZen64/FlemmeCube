@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aptitudes:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   squareApt: {fileID: 21300000, guid: de94324a218af46028e48d77ed0d5ff6, type: 3}
   squareAptOff: {fileID: 21300000, guid: 4333bbd9af73a466abc974285c383071, type: 3}
   circleApt: {fileID: 21300000, guid: 261b63b39bd1142999e4cae02ec7b054, type: 3}
