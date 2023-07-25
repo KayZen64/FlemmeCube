@@ -289,6 +289,17 @@
                 },
                 {
                     "name": "",
+                    "id": "2b4b580c-04bf-4f9f-81b0-b98b110d0a15",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Clavier souris",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f519a156-cfc6-44fa-a014-972ee776f4cb",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",
