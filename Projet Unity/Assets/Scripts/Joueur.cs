@@ -37,6 +37,12 @@ public class Joueur : MonoBehaviour {
         RG2D.velocity = new Vector2(MoveSpeed * direction.x, RG2D.velocity.y);
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Square Boss") {
+            Debug.Log("Collision effectuée avec" + other.gameObject.tag);
+        }
+    }
+
     void Jump() {
         if(isGrounded) {
             RG2D.velocity = new Vector2(RG2D.velocity.x, JumpForce);
