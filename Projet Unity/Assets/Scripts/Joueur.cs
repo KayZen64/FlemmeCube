@@ -37,9 +37,11 @@ public class Joueur : MonoBehaviour {
         RG2D.velocity = new Vector2(MoveSpeed * direction.x, RG2D.velocity.y);
     }
 
+    // Collision avec le boss carré
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag == "Square Boss") {
+        if(other.gameObject.tag == "Square Boss" && RG2D.velocity.y < -18) {
             Debug.Log("Collision effectuée avec" + other.gameObject.tag);
+            Debug.Log("Collision à vélocité " + RG2D.velocity.y);
         }
     }
 
