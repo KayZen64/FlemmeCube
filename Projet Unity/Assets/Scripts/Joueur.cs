@@ -14,6 +14,9 @@ public class Joueur : MonoBehaviour {
     public Vector2 moveVal;
     float AxisX;
 
+    public int squareBossImpacts;
+    float lastVelocity_Y;
+
     public Invisibility invisibilityComponent;
 
     private void Start() {
@@ -39,9 +42,14 @@ public class Joueur : MonoBehaviour {
 
     // Collision avec le boss carré
     private void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag == "Square Boss" && RG2D.velocity.y < -18) {
+        Debug.Log("test");
+        if(other.gameObject.tag == "Square Boss") {
+            Debug.Log("Collision à vélocité " + lastVelocity_Y);
+            if(lastVelocity_Y < -18) { 
             Debug.Log("Collision effectuée avec" + other.gameObject.tag);
-            Debug.Log("Collision à vélocité " + RG2D.velocity.y);
+            squareBossImpacts = squareBossImpacts +1;
+            Debug.Log("Impact Numéro " + squareBossImpacts);
+            }
         }
     }
 
@@ -81,4 +89,7 @@ public class Joueur : MonoBehaviour {
     isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
     }
     
+    private void FixedUpdate() {
+        lastVelocity_Y = RG2D.velocity.y;
+    }
 }
