@@ -15,6 +15,9 @@ public class SquareBoss : MonoBehaviour
                 Debug.Log("Collision effectuée avec" + other.gameObject.tag);
                 impactsNumber = impactsNumber +1;
                 Debug.Log("Impact Numéro " + impactsNumber);
+                if(impactsNumber == 3) {
+                    transform.Translate(0,-50,0);
+                }
             }
         }
     }
