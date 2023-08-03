@@ -5,7 +5,14 @@ using UnityEngine;
 public class SquareBoss : MonoBehaviour
 {
     int impactsNumber;
-    public Joueur joueurScript;  
+    public Joueur joueurScript;
+    //GameObject patate = GameObject.Find("patate");
+    public GameObject patate;
+
+
+    void Start() {
+        patate.transform.localScale = new Vector3(0,0,0);
+    }
 
     private void OnCollisionEnter2D(Collision2D other) {
         Debug.Log("test");
@@ -17,6 +24,7 @@ public class SquareBoss : MonoBehaviour
                 Debug.Log("Impact Numéro " + impactsNumber);
                 if(impactsNumber == 3) {
                     transform.Translate(0,-50,0);
+                    patate.transform.localScale = new Vector3(0.5f,0.5f,0.5f);
                 }
             }
         }
