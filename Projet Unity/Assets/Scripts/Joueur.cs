@@ -13,10 +13,7 @@ public class Joueur : MonoBehaviour {
     public Rigidbody2D RG2D;
     public Vector2 moveVal;
     float AxisX;
-
-    public int squareBossImpacts;
-    float lastVelocity_Y;
-
+    public float lastVelocity_Y;
     public Invisibility invisibilityComponent;
 
     private void Start() {
@@ -41,17 +38,6 @@ public class Joueur : MonoBehaviour {
     }
 
     // Collision avec le boss carré
-    private void OnCollisionEnter2D(Collision2D other) {
-        Debug.Log("test");
-        if(other.gameObject.tag == "Square Boss") {
-            Debug.Log("Collision à vélocité " + lastVelocity_Y);
-            if(lastVelocity_Y < -18) { 
-            Debug.Log("Collision effectuée avec" + other.gameObject.tag);
-            squareBossImpacts = squareBossImpacts +1;
-            Debug.Log("Impact Numéro " + squareBossImpacts);
-            }
-        }
-    }
 
     void Jump() {
         if(isGrounded) {
