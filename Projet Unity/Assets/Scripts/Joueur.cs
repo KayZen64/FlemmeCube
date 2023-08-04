@@ -13,7 +13,7 @@ public class Joueur : MonoBehaviour {
     public Rigidbody2D RG2D;
     public Vector2 moveVal;
     float AxisX;
-
+    public float lastVelocity_Y;
     public Invisibility invisibilityComponent;
 
     private void Start() {
@@ -36,6 +36,8 @@ public class Joueur : MonoBehaviour {
     void Mouvement(Vector2 direction) {
         RG2D.velocity = new Vector2(MoveSpeed * direction.x, RG2D.velocity.y);
     }
+
+    // Collision avec le boss carré
 
     void Jump() {
         if(isGrounded) {
@@ -73,4 +75,7 @@ public class Joueur : MonoBehaviour {
     isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
     }
     
+    private void FixedUpdate() {
+        lastVelocity_Y = RG2D.velocity.y;
+    }
 }
