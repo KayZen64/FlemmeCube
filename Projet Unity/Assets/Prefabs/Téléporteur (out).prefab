@@ -122,7 +122,6 @@ GameObject:
   - component: {fileID: 277286819690982768}
   - component: {fileID: 277286819690982775}
   - component: {fileID: 277286819690982770}
-  - component: {fileID: 277286819690982769}
   m_Layer: 0
   m_Name: "Arri\xE8re plan t\xE9l\xE9porteur"
   m_TagString: NextLevel
@@ -223,18 +222,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9105506, y: 0.96996886}
   m_EdgeRadius: 0
---- !u!114 &277286819690982769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277286819690982772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba086e587cbd2462abbed2dbbca9799b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4720660890447382074
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,6 +45,11 @@ public class Joueur : MonoBehaviour {
         }
     }
 
+    void Interact() {
+        
+    }
+
+
     void Invisibility() {
         invisibilityComponent.StartInvisibility();
     }

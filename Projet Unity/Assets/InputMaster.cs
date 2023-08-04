@@ -53,6 +53,15 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""245a465b-a678-45bc-b314-74c12a46d424"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -341,6 +350,28 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""action"": ""Invisibility"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e87930d4-5180-4bb0-8fa5-e5add7f6c6d3"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d7613ae6-28f7-4193-825f-f9e0472682e8"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -380,6 +411,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
         m_Joueur_Jump = m_Joueur.FindAction("Jump", throwIfNotFound: true);
         m_Joueur_Move = m_Joueur.FindAction("Move", throwIfNotFound: true);
         m_Joueur_Invisibility = m_Joueur.FindAction("Invisibility", throwIfNotFound: true);
+        m_Joueur_Interact = m_Joueur.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -442,6 +474,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
     private readonly InputAction m_Joueur_Jump;
     private readonly InputAction m_Joueur_Move;
     private readonly InputAction m_Joueur_Invisibility;
+    private readonly InputAction m_Joueur_Interact;
     public struct JoueurActions
     {
         private @InputMaster m_Wrapper;
@@ -449,6 +482,7 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Joueur_Jump;
         public InputAction @Move => m_Wrapper.m_Joueur_Move;
         public InputAction @Invisibility => m_Wrapper.m_Joueur_Invisibility;
+        public InputAction @Interact => m_Wrapper.m_Joueur_Interact;
         public InputActionMap Get() { return m_Wrapper.m_Joueur; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -467,6 +501,9 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                 @Invisibility.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInvisibility;
                 @Invisibility.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInvisibility;
                 @Invisibility.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInvisibility;
+                @Interact.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_JoueurActionsCallbackInterface = instance;
             if (instance != null)
@@ -480,6 +517,9 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                 @Invisibility.started += instance.OnInvisibility;
                 @Invisibility.performed += instance.OnInvisibility;
                 @Invisibility.canceled += instance.OnInvisibility;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -507,5 +547,6 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
         void OnInvisibility(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
