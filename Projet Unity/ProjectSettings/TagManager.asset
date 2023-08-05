@@ -9,6 +9,7 @@ TagManager:
   - Game Over
   - NextLevel
   - Square Boss
+  - Laser
   layers:
   - Default
   - TransparentFX
