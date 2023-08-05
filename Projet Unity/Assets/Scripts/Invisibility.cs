@@ -8,7 +8,7 @@ public class Invisibility : MonoBehaviour
 
     public float invTime = 5.0f;
     public float invCooldown = 5.0f;
-    bool isInvEnabled = false;
+    public bool isInvEnabled = false;
     bool isCooldown = false;
     public Texture2D invTexture;
     public SpriteRenderer spriteRenderer;
