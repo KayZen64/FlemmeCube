@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 115857797}
   m_Layer: 0
   m_Name: Square (10)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,8 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &115857799
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 145228147}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &145228149
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -718,11 +718,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
---- !u!4 &317638765 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4639979044051959523, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
-  m_PrefabInstance: {fileID: 317638764}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &343907613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -811,7 +806,7 @@ GameObject:
   - component: {fileID: 369470441}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -854,8 +849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &369470443
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1176,8 +1171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 317638765}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!61 &448286462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2188,8 +2183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!61 &806697028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2608,7 +2603,7 @@ GameObject:
   - component: {fileID: 1030873234}
   m_Layer: 0
   m_Name: Square (5)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2651,8 +2646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &1030873236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3287,7 +3282,7 @@ GameObject:
   - component: {fileID: 1182896798}
   m_Layer: 0
   m_Name: Square (9)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3330,8 +3325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &1182896800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3805,7 +3800,7 @@ GameObject:
   - component: {fileID: 1337809418}
   m_Layer: 0
   m_Name: Square (7)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3848,8 +3843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &1337809420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4313,7 +4308,7 @@ GameObject:
   - component: {fileID: 1479197371}
   m_Layer: 0
   m_Name: Square (3)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4356,8 +4351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &1479197373
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4880,7 +4875,7 @@ GameObject:
   - component: {fileID: 1775832437}
   m_Layer: 0
   m_Name: Square (8)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4923,8 +4918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &1775832439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5006,7 +5001,7 @@ GameObject:
   - component: {fileID: 1791189167}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5049,8 +5044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &1791189169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5873,7 +5868,7 @@ GameObject:
   - component: {fileID: 2007929220}
   m_Layer: 0
   m_Name: Square (6)
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5916,8 +5911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7726fb7c12a984f08ad06f5b85c82a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   respawnPoint: {fileID: 1949725650}
+  deathSFX: {fileID: 0}
 --- !u!212 &2007929222
 SpriteRenderer:
   m_ObjectHideFlags: 0

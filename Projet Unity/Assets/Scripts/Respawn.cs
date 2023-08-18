@@ -9,9 +9,13 @@ public class Respawn : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Laser" || other.gameObject.tag == "Respawn")
+        if(other.gameObject.tag == "Laser")
         {
             deathSFX.PlayDeathSFX(other.gameObject.tag);
+            transform.position = respawnPoint.transform.position;
+        }
+        
+        else if (other.gameObject.tag == "Respawn") {
             transform.position = respawnPoint.transform.position;
         }
     }

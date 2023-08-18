@@ -1453,6 +1453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1219007915984819137, guid: 82e9ceae7ca494a219dbf3c31d3f8863, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1219007915984819149, guid: 82e9ceae7ca494a219dbf3c31d3f8863, type: 3}
       propertyPath: invisibilityComponent
       value: 
@@ -2192,6 +2196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4639979044051959522, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
+      propertyPath: RG2D
+      value: 
+      objectReference: {fileID: 1786162084}
     - target: {fileID: 4639979044051959523, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2283,6 +2291,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 415070335}
   deathSFX: {fileID: 1786162080}
+--- !u!50 &1786162084 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4639979044051959520, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
+  m_PrefabInstance: {fileID: 1677267960}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1904157001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,12 +2981,16 @@ PrefabInstance:
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5464146251524505408, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.637103
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464146251524505408, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
       propertyPath: m_LocalPosition.x
       value: -72
       objectReference: {fileID: 0}
     - target: {fileID: 5464146251524505408, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -72.6
+      value: -78.9175
       objectReference: {fileID: 0}
     - target: {fileID: 5464146251524505408, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3010,7 +3027,11 @@ PrefabInstance:
     - target: {fileID: 5464146251524505411, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 305604787}
+      objectReference: {fileID: 1786162074}
+    - target: {fileID: 5464146251524505411, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
+      propertyPath: deathSFX
+      value: 
+      objectReference: {fileID: 1786162080}
     - target: {fileID: 5464146251524505411, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
       propertyPath: respawnPoint
       value: 
@@ -3019,7 +3040,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Machine \xE0 respawn"
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5464146251524505420, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5464146251524505411, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff8058bf5535148cba6906e111c42e75, type: 3}
 --- !u!1001 &5663828714863235633
 PrefabInstance:
