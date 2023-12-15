@@ -37,15 +37,6 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Move"",
-                    ""type"": ""Value"",
-                    ""id"": ""e3e9447f-3f74-44b9-b428-14abf7ce2c82"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": true
-                },
-                {
                     ""name"": ""Invisibility"",
                     ""type"": ""Button"",
                     ""id"": ""daac7d4f-d6c8-4e2e-a19f-9eff163c9e20"",
@@ -53,229 +44,27 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""e509e19e-7ecd-4a01-b63c-9e5eac66157d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""d9d7a4d7-5b13-4216-a8f1-d9640cd6e21d"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": ""Stick gauche"",
-                    ""id"": ""3888efe8-4d6d-42d5-b3e6-2786caec7fb3"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""66fe91b6-d121-423f-bd76-cf7b65151d28"",
-                    ""path"": ""<XInputController>/leftStick/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""c9e579e5-9128-4163-ac39-2d8e0f83f2f5"",
-                    ""path"": ""<XInputController>/leftStick/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""5074a454-370f-458d-9bb2-2d58b042f491"",
-                    ""path"": ""<XInputController>/leftStick/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""7d610b74-6850-4a08-a689-bfab96809f85"",
-                    ""path"": ""<XInputController>/leftStick/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""D-Pad"",
-                    ""id"": ""814716c0-c5d6-4562-8110-88279a7f7e3e"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""1e4da01c-0a84-4391-bcfd-4f4ab1c8e684"",
-                    ""path"": ""<XInputController>/dpad/up"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""4139fe0f-4b86-45b3-807b-f4bd187913d3"",
-                    ""path"": ""<XInputController>/dpad/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""dd547a6b-e10f-4b5d-b7bd-5da19dd464af"",
-                    ""path"": ""<XInputController>/dpad/left"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""0832c9ac-94b9-468d-9007-073bca844e2a"",
-                    ""path"": ""<XInputController>/dpad/right"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Manette"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""Flèches directionnelles"",
-                    ""id"": ""490aee7a-a653-449b-a31a-4c8722b7a6fc"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""369483a1-da9d-4f1a-8c25-2aaabc73b9c8"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""9a7246c9-455f-4e3d-af44-80acf8fa6a10"",
-                    ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""a1819227-f21f-44ee-9a74-1f3faa33923d"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""8e16a11a-32c2-4f3f-bb23-dc3e19e414c9"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""ZQSD"",
-                    ""id"": ""73cef722-8ccb-437a-a775-5694191e458f"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""c584bdf8-08f9-46fc-9ae3-614243653160"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""cc24c72a-489d-4adf-a9bb-f5feaae29eb1"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""53382147-8ebb-4c6c-bff8-abcb16b6722e"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""156ea220-3689-4bc2-b129-2f74cb92c736"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Clavier souris"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
                 {
                     ""name"": """",
                     ""id"": ""05572bd5-82a8-491e-a8d7-4fa4f686d320"",
@@ -341,6 +130,127 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                     ""action"": ""Invisibility"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4b018382-47e4-43ff-9c7c-dde6d6520e42"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Manette"",
+                    ""action"": ""Pause menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e6d87477-16ba-417d-8b80-94ff3d2df2e2"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Clavier souris"",
+                    ""action"": ""Pause menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""b9e6187b-ab9b-407c-8fc6-9c2e440ccf8f"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""6232beed-eae3-483a-abb1-54ef30fe9b3d"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Manette"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""b5572be7-5214-4cec-9072-5b1f760fcd65"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Manette"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""16862f22-748f-4c06-a2d7-648224abbfc7"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""cc532f4c-a07d-4eee-83f9-14970a226d39"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Clavier souris"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""bac0afc9-2917-4ec7-b9f4-7c5b428053c0"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Clavier souris"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""77a059b0-f546-4e03-b588-4a12bee3bbb5"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""93a2b189-18ff-4f2b-92f3-e3d5176a5e77"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Clavier souris"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""f68d28f5-cd36-441b-a3d5-d08bd721c3cd"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Clavier souris"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -378,8 +288,9 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
         // Joueur
         m_Joueur = asset.FindActionMap("Joueur", throwIfNotFound: true);
         m_Joueur_Jump = m_Joueur.FindAction("Jump", throwIfNotFound: true);
-        m_Joueur_Move = m_Joueur.FindAction("Move", throwIfNotFound: true);
         m_Joueur_Invisibility = m_Joueur.FindAction("Invisibility", throwIfNotFound: true);
+        m_Joueur_Pausemenu = m_Joueur.FindAction("Pause menu", throwIfNotFound: true);
+        m_Joueur_Move = m_Joueur.FindAction("Move", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -440,15 +351,17 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Joueur;
     private IJoueurActions m_JoueurActionsCallbackInterface;
     private readonly InputAction m_Joueur_Jump;
-    private readonly InputAction m_Joueur_Move;
     private readonly InputAction m_Joueur_Invisibility;
+    private readonly InputAction m_Joueur_Pausemenu;
+    private readonly InputAction m_Joueur_Move;
     public struct JoueurActions
     {
         private @InputMaster m_Wrapper;
         public JoueurActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @Jump => m_Wrapper.m_Joueur_Jump;
-        public InputAction @Move => m_Wrapper.m_Joueur_Move;
         public InputAction @Invisibility => m_Wrapper.m_Joueur_Invisibility;
+        public InputAction @Pausemenu => m_Wrapper.m_Joueur_Pausemenu;
+        public InputAction @Move => m_Wrapper.m_Joueur_Move;
         public InputActionMap Get() { return m_Wrapper.m_Joueur; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -461,12 +374,15 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnJump;
-                @Move.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
                 @Invisibility.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInvisibility;
                 @Invisibility.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInvisibility;
                 @Invisibility.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnInvisibility;
+                @Pausemenu.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnPausemenu;
+                @Pausemenu.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnPausemenu;
+                @Pausemenu.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnPausemenu;
+                @Move.started -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_JoueurActionsCallbackInterface.OnMove;
             }
             m_Wrapper.m_JoueurActionsCallbackInterface = instance;
             if (instance != null)
@@ -474,12 +390,15 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
-                @Move.started += instance.OnMove;
-                @Move.performed += instance.OnMove;
-                @Move.canceled += instance.OnMove;
                 @Invisibility.started += instance.OnInvisibility;
                 @Invisibility.performed += instance.OnInvisibility;
                 @Invisibility.canceled += instance.OnInvisibility;
+                @Pausemenu.started += instance.OnPausemenu;
+                @Pausemenu.performed += instance.OnPausemenu;
+                @Pausemenu.canceled += instance.OnPausemenu;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
             }
         }
     }
@@ -505,7 +424,8 @@ public partial class @InputMaster : IInputActionCollection2, IDisposable
     public interface IJoueurActions
     {
         void OnJump(InputAction.CallbackContext context);
-        void OnMove(InputAction.CallbackContext context);
         void OnInvisibility(InputAction.CallbackContext context);
+        void OnPausemenu(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
     }
 }

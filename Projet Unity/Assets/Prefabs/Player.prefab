@@ -153,6 +153,8 @@ GameObject:
   - component: {fileID: 4639979044051959522}
   - component: {fileID: 3447834091740750378}
   - component: {fileID: 85710503879049424}
+  - component: {fileID: 3584943069367187725}
+  - component: {fileID: 3172650607687554913}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -194,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 1b388e1ed2fd34f9384643aa274597d1, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -205,7 +207,35 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f79334b2-2262-49ac-adb8-2e1babea89c5
+    m_ActionName: Joueur/Jump[/Keyboard/upArrow,/Keyboard/w,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: daac7d4f-d6c8-4e2e-a19f-9eff163c9e20
+    m_ActionName: Joueur/Invisibility[/Keyboard/x]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e509e19e-7ecd-4a01-b63c-9e5eac66157d
+    m_ActionName: Joueur/Pause menu[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3584943069367187725}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d9d7a4d7-5b13-4216-a8f1-d9640cd6e21d
+    m_ActionName: Joueur/Move[/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Joueur
@@ -265,7 +295,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4639979044051959524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08bd3e4387f334f73b65435099a452ea, type: 3}
   m_Name: 
@@ -312,6 +342,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laser: {fileID: 2578492047141830778}
+--- !u!114 &3584943069367187725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639979044051959524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48801c59ad4e34e1fb953b7074febbdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlayerMovement: {fileID: 3172650607687554913}
+--- !u!114 &3172650607687554913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4639979044051959524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cee8586e97643738b5ab49a7afcb29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4639979044051959520}
+  moveSpeed: 50
+  decceleration: 5000
+  acceleration: 5000
+  velPower: 1
 --- !u!1 &4639979044209457792
 GameObject:
   m_ObjectHideFlags: 0
