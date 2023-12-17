@@ -368,9 +368,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4639979044051959520}
-  moveSpeed: 50
-  decceleration: 5000
-  acceleration: 5000
+  moveSpeed: 14
+  decceleration: 29
+  acceleration: 7
   velPower: 1
 --- !u!1 &4639979044209457792
 GameObject:

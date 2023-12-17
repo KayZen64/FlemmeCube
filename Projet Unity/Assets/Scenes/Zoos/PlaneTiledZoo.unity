@@ -134,18 +134,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3172650607687554913, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
-      propertyPath: moveSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172650607687554913, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
-      propertyPath: acceleration
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172650607687554913, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
-      propertyPath: decceleration
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4639979044051959523, guid: eddb308bead1741b79e6d44378e5c0a4, type: 3}
       propertyPath: m_RootOrder
       value: 1
